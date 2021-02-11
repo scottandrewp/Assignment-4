@@ -13,7 +13,7 @@ namespace Assignment_4.Models
             Rank = rank;
         }
         [Required]
-        public int Rank { get;  }
+        public int? Rank { get;  }
 
         [Required]
         public string Name { get; set; }
