@@ -1,15 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Top 5 Restaurants!";
 }
 
 @model IEnumerable<string>
 
-
+<header class="text-center">
+    <h1>@ViewBag.Title</h1>
+</header>
 <div class="text-center">
     <ul>
         @foreach (string i in Model)
         {
-            <li>@Html.Raw(i)</li>
+            <li class="list-group-item">@Html.Raw(i)</li>
            
         }
     </ul>

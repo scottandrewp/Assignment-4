@@ -7,11 +7,16 @@
 
 
 <div>
-    <h2>Here is the list of the Users Favorite Restaurants!</h2>
+    <h2>Here is the list of the Users' Favorite Restaurants!</h2>
 
-    <table>
+    <table class="table">
         <thead>
-            <tr><th>Name of User</th><th>Restaurant Name</th><th>Favorite Dish</th><th>Restaurant Phone Number</th></tr>
+            <tr>
+                <th scope="col">Name of User</th>
+                <th scope="col">Restaurant Name</th>
+                <th scope="col">Favorite Dish</th>
+                <th scope="col">Restaurant Phone Number</th>
+            </tr>
         </thead>
 
         <tbody>
@@ -20,6 +25,7 @@
                 
                 {
                     <tr>
+
                         <td>@r.Name</td>
                         <td>@r.ResturantName</td>
                         <td>@r.FavoriteDish</td>

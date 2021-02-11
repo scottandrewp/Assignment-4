@@ -30,11 +30,14 @@ namespace Assignment_4.Controllers
             return View(restaurantList);
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
 
         }
+        
+       
 
         [HttpGet]
         public IActionResult Suggestion()
