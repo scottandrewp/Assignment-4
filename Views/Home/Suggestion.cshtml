@@ -2,10 +2,14 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "Suggest a Restaurant!";
 }
 
 @model Assignment_4.Models.RestaurantSuggestions
 
+<header>
+    <h1>@ViewBag.Title</h1>
+</header>
 <div>
     <form class="form-group" method="post" asp-action="Suggestion">
         <label asp-for="Name">Your Name:</label>
