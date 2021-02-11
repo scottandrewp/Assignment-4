@@ -48,9 +48,14 @@ namespace Assignment_4.Controllers
         [HttpPost]
         public IActionResult Suggestion(RestaurantSuggestions restaurant)
         {
+            if(restaurant.FavoriteDish == null)
+            {
+                restaurant.FavoriteDish = "It's all tasty!";
+            }
             if (ModelState.IsValid)// This ensures that invalid inputs don't get added to the list #Notcoveredinthevideos!
             {
-                Models.RestaurantList.AddRestaurant(restaurant);
+                
+                RestaurantList.AddRestaurant(restaurant);
                 return View("Confirmation", restaurant); // passed in the model to let user know that the restaurant was added successfully
             }
             return View();
