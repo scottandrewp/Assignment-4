@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Restaurant Added Successfully!";
+}
+
+@model Assignment_4.Models.RestaurantSuggestions
+<div>
+    <h2>Congratulations @Model.Name! You successully added @Model.ResturantName to the User Favorites!</h2>
+    <br />
+    <br />
+    <a asp-controller="Home" asp-action="Suggestion">Add Another Restaurant</a>
+    <br />
+    <a asp-controller="Home" asp-action="SuggestionList">View the User Favorites!</a>
+</div>
